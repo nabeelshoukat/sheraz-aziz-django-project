@@ -12,8 +12,8 @@ urlpatterns = [
     path('our-team', views.our_team, name='our-team'),
     path('contact-us', views.contact_us, name='contact-us'),
     path('services/<int:id>', views.services_item, name='services'),
-    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
-    re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+    # re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    # re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 
 ]
 
